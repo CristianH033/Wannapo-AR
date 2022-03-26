@@ -50,7 +50,11 @@ document
     let aScene = document
       .querySelector("a-scene")
       .components.screenshot.getCanvas("perspective");
-    let frame = captureVideoFrame("video", "png");
+      
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+
+    let frame = captureVideoFrame("video", "png", width, height);
     aScene = resizeCanvas(aScene, frame.width, frame.height);
     frame = frame.dataUri;
 
