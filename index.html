@@ -1,43 +1,43 @@
 <html>
   <title>Wanapo AR</title>
   <meta charset="UTF-8" />
-  <link rel="stylesheet" href="css/app.css?v=3" />
+  <link rel="stylesheet" href="css/app.css?v=4" />
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <!-- we import arjs version without NFT but with marker + location based support -->
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <script src="https://unpkg.com/merge-images"></script>
   <script src="js/capture-video-frame.js"></script>
-  <script src="js/app.js?v=3" defer></script>
+  <script src="js/app.js?v=4" defer></script>
   <body>
     <a-scene
       embedded
       arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3;"
     >
       <a-assets>
-        <a-asset-item id="model-1" src="models/1/scene.gltf?v=3"></a-asset-item>
-        <a-asset-item id="model-2" src="models/1/scene.gltf?v=3"></a-asset-item>
-        <a-asset-item id="model-3" src="models/1/scene.gltf?v=3"></a-asset-item>
-        <a-asset-item id="model-4" src="models/1/scene.gltf?v=3"></a-asset-item>
-        <a-asset-item id="model-5" src="models/1/scene.gltf?v=3"></a-asset-item>
-        <a-asset-item id="model-6" src="models/1/scene.gltf?v=3"></a-asset-item>
+        <a-asset-item id="model-1" src="models/1/scene.glb?v=4"></a-asset-item>
+        <a-asset-item id="model-2" src="models/1/scene.glb?v=4"></a-asset-item>
+        <a-asset-item id="model-3" src="models/1/scene.glb?v=4"></a-asset-item>
+        <a-asset-item id="model-4" src="models/1/scene.glb?v=4"></a-asset-item>
+        <a-asset-item id="model-5" src="models/1/scene.glb?v=4"></a-asset-item>
+        <a-asset-item id="model-6" src="models/1/scene.glb?v=4"></a-asset-item>
       </a-assets>
       <a-marker id="animated-marker-1" type="barcode" value="1">
-        <a-entity gltf-model="#model-1" scale="0.1 0.1 0.1"> </a-entity>
+        <a-entity gltf-model="#model-1" scale="10 10 10"> </a-entity>
       </a-marker>
       <a-marker id="animated-marker-2" type="barcode" value="2">
-        <a-entity gltf-model="#model-2" scale="0.5 0.5 0.5"> </a-entity>
+        <a-entity gltf-model="#model-2" scale="20 20 20"> </a-entity>
       </a-marker>
       <a-marker id="animated-marker-3" type="barcode" value="3">
-        <a-entity gltf-model="#model-3" scale="1 1 1"> </a-entity>
+        <a-entity gltf-model="#model-3" scale="30 30 30"> </a-entity>
       </a-marker>
       <a-marker id="animated-marker-4" type="barcode" value="4">
-        <a-entity gltf-model="#model-4" scale="1.5 1.5 1.5"> </a-entity>
+        <a-entity gltf-model="#model-4" scale="40 40 40"> </a-entity>
       </a-marker>
       <a-marker id="animated-marker-5" type="barcode" value="5">
-        <a-entity gltf-model="#model-5" scale="2 2 2"> </a-entity>
+        <a-entity gltf-model="#model-5" scale="50 50 50"> </a-entity>
       </a-marker>
       <a-marker id="animated-marker-6" type="barcode" value="6">
-        <a-entity gltf-model="#model-6" scale="2.5 2.5 2.5"> </a-entity>
+        <a-entity gltf-model="#model-6" scale="60 60 60"> </a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
